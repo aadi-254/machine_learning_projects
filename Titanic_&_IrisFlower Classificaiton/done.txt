@@ -1,0 +1,5 @@
+survive by pclass
+survive by gender
+survive by sisbp and parch (sibling and parent)
+survive by based on Fare
+survive by based on age
