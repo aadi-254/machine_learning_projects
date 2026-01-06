@@ -1,0 +1,116 @@
+🏠 California Housing Dataset – Column Meanings
+1️⃣ longitude
+
+Type: Numerical (float)
+
+Meaning: East–West geographic location of the house
+
+Insight: Helps identify proximity to coast/cities
+
+Use in ML: ✅ Important (location matters)
+
+2️⃣ latitude
+
+Type: Numerical (float)
+
+Meaning: North–South geographic location
+
+Insight: Combined with longitude → strong price indicator
+
+Use in ML: ✅ Important
+
+3️⃣ housing_median_age
+
+Type: Numerical
+
+Meaning: Median age of houses in the block
+
+Insight: Older houses may be cheaper or premium (depends on area)
+
+Use in ML: ✅ Feature
+
+4️⃣ total_rooms
+
+Type: Numerical
+
+Meaning: Total number of rooms in all houses in the block
+
+Note: Raw value, not per house
+
+Use in ML: ⚠️ Better after feature engineering
+
+5️⃣ total_bedrooms
+
+Type: Numerical
+
+Meaning: Total number of bedrooms in the block
+
+Missing values: Yes (needs filling)
+
+Use in ML: ⚠️ Engineer ratio features
+
+6️⃣ population
+
+Type: Numerical
+
+Meaning: Total population in the block
+
+Insight: High population density may affect price
+
+Use in ML: ✅ Feature
+
+7️⃣ households
+
+Type: Numerical
+
+Meaning: Number of households in the block
+
+Insight: Helps calculate room/people ratios
+
+Use in ML: ✅ Feature
+
+8️⃣ median_income
+
+Type: Numerical
+
+Meaning: Median income of households (in tens of thousands)
+
+Example:
+
+3.5 → $35,000
+
+Insight: 🔥 STRONGEST predictor of house price
+
+Use in ML: ✅ Very important
+
+9️⃣ median_house_value 🎯
+
+Type: Numerical
+
+Meaning: Median house price (TARGET VARIABLE)
+
+Max value: Capped at $500,000
+
+Use in ML: 🎯 Label (y)
+
+🔟 ocean_proximity
+
+Type: Categorical
+
+Meaning: Distance of the house from the ocean
+
+Categories:
+
+<1H OCEAN
+
+INLAND
+
+NEAR OCEAN
+
+NEAR BAY
+
+ISLAND
+
+Insight: Houses closer to ocean are more expensive
+
+Use in ML: ✅ Encode (One-H
